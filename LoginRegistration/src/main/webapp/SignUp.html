@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SignUp</title>
+</head>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+    background: #7239d6;
+    overflow: hidden;
+    margin-top: 120px;
+}
+.container {
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+  }
+  .container p {
+   text-align: center;
+  }
+  .logo1 img{
+    margin-left: 85px;
+  }
+  h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .form-group a{
+    text-decoration: none;
+  }
+  label {
+    display: block;
+  }
+  
+  input[type="text"], input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #7239d6;;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-footer {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .form-footer a {
+    text-decoration: none;
+    color: black;
+  }
+.mb-3{
+   padding-top: 10px;
+}
+</style>
+<body>
+<div class="container">
+   <div class="logo1">
+
+   </div>
+   <h2>Sign up</h2>
+   <p>Please fill this form to register</p>
+<form id="SignUp form" method="get" action="Login.html">
+   <div class="mb-3">
+      <label for="username" class="form-label">Enter your Username</label>
+      <input type="text" name="name" class="form-control" id="username" >
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Enter Email Address</label>
+      <input type="email" class="form-control" name="email" id="email">
+    </div>
+    <div class="mb-2">
+      <label for="password" class="form-label">Enter Password</label>
+      <input type="password" class="form-control" name="pwd" id="password">
+    </div>
+
+    <div class="mb-2">
+      <label for="password" class="form-label">Please Confirm Password</label>
+      <input type="password" class="form-control" name="cpwd" id="password"><br>
+    </div>
+    <div class="mb-3">
+      <input type="submit" class="btn btn-primary form-control" id="button" name="submit" value="Save" >
+   
+    </div>
+    <p class="mb-0">Already have an account ? <a href="./Login.html">Log In</a></p>
+   </div>
+</form>
+</body>
+</html>
+          
+          
+          
+         
+           
+           
+           
+           
+        

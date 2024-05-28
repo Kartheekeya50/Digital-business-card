@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Responsive Layout</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>Select a template</h1>
+        <h2>Select a template for your digital business card</h2>
+    </div>
+    <div class="container">
+        <div class="subcontainer">
+            <div class="c1">
+                <div class="digi-card1" id="1">
+                    <a href="form1.html" onclick="selectTemplate('sample')" style="display:block; height:800px; width:350px; position:absolute;"></a>
+                    <iframe src="employee.html" height="800px" width="350px"></iframe>
+                    <div class="select-template">
+                        <p>Do you want to continue with this template</p>
+                    </div>
+                </div>
+            </div>
+            <div class="c2">
+                <div class="digi-card1" id="2">
+                    <a href="form2.html" onclick="selectTemplate('online')" style="display:block; height:800px; width:350px; position:absolute;"></a>
+                    <iframe src="online.html" height="800px" width="350px"></iframe>
+                    <div class="select-template">
+                        <p>Do you want to continue with this template</p>
+                    </div>
+                </div>
+            </div>
+            <div class="c3">
+                <div class="digi-card1" id="3">
+                    <a href="form3.html" onclick="selectTemplate('employee')" style="display:block; height:800px; width:350px; position:absolute;"></a>
+                    <iframe src="sample.html" height="800px" width="350px"></iframe>
+                    <div class="select-template">
+                        <p>Do you want to continue with this template</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function selectTemplate(template) {
+            localStorage.setItem('selectedTemplate', template);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<title>Login</title>
+</head>
+<style>
+  
+  body{
+    margin: 0;
+    padding: 0;
+    background: #7239d6;
+    overflow: hidden;
+    margin-top: 120px;
+}
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+  }
+  .logo1 img{
+    margin-left: 85px;
+  }
+  h2 {
+    text-align: center;
+
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .form-group a{
+    text-decoration: none;
+  }
+  label {
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #7239d6;;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+  
+  .form-footer {
+    margin-top: 10px;
+    text-align: center;
+
+  }
+  
+  .form-footer a {
+    text-decoration: none;
+    color: black;
+  }
+  .form-group h1{
+   font-size: 22px;
+
+  }
+</style>
+<body>
+   <div class="container">
+      <div class="logo1">
+      </div>
+      <h2>Log in to your account</h2>
+
+
+<form id="loginForm" method="post" action="Login.jsp">
+   <div class="form-group">
+      <h1>Enter your Email</h1>
+    <input type="text" name="email" id = "email" required>
+     </div>
+
+     <div class="form-group">
+      <h1>Enter Password</h1> 
+      <input type="password" id="password"  name="pwd" required>
+     </div>
+    
+    
+     <input type="submit" value="Login" id="button">
+   </form>
+   <div class="form-footer">
+      <label for="signup">Don't have an account ? <a href="./SignUp.html"><u>Sign Up</u></a> </label>
+    </div>
+</div>
+</body>
+</html>
+
+   
+
+    

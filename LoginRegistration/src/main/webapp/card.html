@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <title>digital-card</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\Kartheek\OneDrive\Desktop\VCARD\INV.jpg">
+<script type="text/javascript">
+     window.onload = function () { alert("Server connection is successful"); }
+     </script>
+</head>
+
+<style>
+    .card {
+        position: relative;
+        height: 550px;
+        width: 300px;
+        background-color: white;
+        margin: 40px auto;
+    }
+    .header {
+        position: absolute;
+        height: 300px;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-image: linear-gradient(to right, #1dd1a1, #1abc9c);
+    }
+    
+    .header img {
+        position: absolute;
+        border-radius: 50%;
+        height: 130px;
+        width: 130px;
+        left: 90px;
+        top: 22px;
+    }
+    
+    .header h3 {
+        position: absolute;
+        font-family: sans-serif;
+        color: white;
+        font-size: 26px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        top: 140px;
+        left: 60px;
+    }
+    .header h4 {
+        position: absolute;
+        font-family: sans-serif;
+        color: BLACK;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        top: 170px;
+        left: 35px;
+    }
+.header h5 {
+        position: absolute;
+        font-family: sans-serif;
+        color: BLACK;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        top: 190px;
+        left: 130px;
+    }
+    .header i {
+         position: absolute;
+         color: white;
+         top: 130px;
+         right: 110px;
+         font-size:13px;
+   }
+    .body {
+        position: absolute;
+        height: 200px;
+        left: 0px;
+        right: 5px;
+        top: 54%;
+        background-color: #f2f2f2;
+        box-shadow: 0 40px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .body ul {
+        position: absolute;
+        left: 0;
+        bottom: 30px;
+        right: 0;
+        top: 35px;
+    }
+    
+    .body ul li {
+        position: absolute;
+        list-style: none;
+        display: block;
+        height: 38px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        transition: all .3s ease-in-out;
+    }
+    
+    .body ul li p,
+    h3,
+    i {
+        position: absolute;
+    }
+    
+    .body ul li h3 {
+        top: -20px;
+        left: 58px;
+        color: #576574;
+    }
+    
+    .body ul li p {
+        top: 11px;
+        left: 59px;
+        font-size: 12px;
+        font-family: Sans-serif;
+        color: #576574;
+    }
+    
+    .body ul li i {
+        left: 8px;
+        top: 7px;
+        color: #16a085;
+        font-size: 26px;
+    }
+    
+    .body ul li:nth-child(1) {
+        top: -16px;
+    }
+    
+    .body ul li:nth-child(2) {
+        top: 26px;
+    }
+    
+    .body ul li:nth-child(3) {
+        top: 68px;
+    }
+    
+    .body ul li:nth-child(1) i {
+        left: 12px;
+    }
+    
+    .body li:hover {
+        background-color: #E6E6FA;
+        cursor: pointer;
+	  margin-bottom:0px;
+    } 
+    .footer {
+        position: absolute;
+        height: 50px;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(to right, #1dd1a1, #1abc9c);
+       
+    }
+    
+    .footer ul {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 120px;
+  transform: translate(-50%, -50%);
+}
+
+.footer ul li {
+  list-style: none;
+}
+
+.footer ul li a {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+ 
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+  margin-left: 20px;
+}
+
+.footer ul li a .icon {
+  position: absolute;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+  margin-left:-10px;
+  margin-top:6px
+}
+
+.footer ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.footer ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+.footer ul li a:hover:before {
+  top: 0;
+}
+
+.footer ul li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+.footer ul li:nth-child(2) a:before{
+  background: #25d366;
+}
+
+.footer ul li:nth-child(3) a:before {
+  background: #c13584;
+}
+
+.footer ul li:nth-child(4) a:before {
+  background: #0f0fff;
+}
+    .body {
+        position: relative;
+        height: 250px;
+        width: 300px;
+	  margin-bottom:20px;
+    }
+ 	.header1{
+	padding: 30px;
+	background-color: #f2f2f2;
+} 
+	.header1 pre{
+       position: relative; 
+        font-family: sans-serif;
+        font-size: 13px;   
+         
+}
+.header2 {
+        
+        position: relative;
+       height: 150px;
+        width: 300px;
+		top: 0%;
+        margin-bottom:0px;
+         background-color: #f2f2f2
+       
+    }.img-container {
+			position: relative;
+			width: 500px;
+			height: 500px;
+                margin-bottom:0px;
+		}
+
+		.img-container img {
+			position: absolute;
+			top: 10px;
+			left: 0px;
+			width: 300px;
+			height: 300px;
+                margin-bottom:0px;
+                
+}
+.header3 {
+         position: relative;
+        height: 230px;
+        width: 300px;
+        margin-top:-200px;
+        background-color:#f2f2f2;
+}
+.form{
+      height: 400px;
+     width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  margin-top:20px;
+  outline: none;
+  background-color:#f2f2f2
+}
+.form input:focus {
+  background-color:#E8E8E8;
+}
+.form input, textarea{
+  width: 100%;
+  background-color:#F0F0F0;
+ }
+.form textarea:focus {
+  background-color:#F0F0F0;
+}
+.form input[type="submit"]{
+    background-color:whitesmoke;
+}
+.form input[type="submit"]:hover{
+    background-color:#1dd1a1;
+
+}
+</style>
+
+<body background="background.png">
+
+    <div class="card">
+        <div class="header">
+            <img src="Karthi.png">
+             <a href="./form.html" class="edit-button">
+    <i class="fa fa-edit"></i>
+  </a>
+            <h3>Name: <?php echo $row['name']; ?></h3>
+            <p>college: <?php echo $row['college']; ?></p>
+		  <p>branch: <?php echo $row['branch']; ?></p>
+        </div>
+
+        <div class="body">
+            <ul>
+                <li>
+                   <p>mobile: <?php echo $row['mobile']; ?></p>
+                    <p>Mobile number</p>
+                    <i class="fas fa-mobile-alt"></i>
+                </li>
+                <li>
+                    <p>email: <?php echo $row['email']; ?></p>
+                    <p>Email address</p>
+                    <i class="fas fa-envelope"></i>
+                </li>
+                <li>
+                    <p>address: <?php echo $row['address']; ?></p>
+                    <p>Address</p>
+                    <i class="fas fa-map-marker-alt"></i>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <ul>
+                <li><a href="https://www.facebook.com/narendrapurapu"><i class="fab fa-facebook-f icon" style='font-size:25px'></i></a>
+                     </li>
+                <li>
+                    <a href=" https://wa.me/qr/TFWJWKGSPUCCH1"><i class="fab fa-whatsapp icon" style='font-size:25px'></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/_mystique_22_/"><i class="fab fa-instagram icon" style='font-size:25px'></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/vuppuluri-vani-sri-577948269/"><i class="fab fa-linkedin-in icon" style='font-size:25px'></i></a>
+                </li>
+            </ul>
+        </div>
+  <div class="body">
+          <div class="header1">
+           
+<h2 style="color:#1abc9c"><u> About Us &nbsp;</u></h2>           
+            <pre  style="color:#576574">
+Adikavi Nannaya University was established
+ on 22nd April 2006, by an Act of the 
+ Andhra Pradesh State Legislative Assembly
+ to meet the higher education needs of 
+ East & West Godavari districts. 
+ It is an affiliating residential 
+ university with territorial jurisdiction
+ over East & West Godavari districts of 
+ Andhra Pradesh. named after the first poet
+ of Telugu culture, Nannaya (the eleventh 
+ century translator of Mahabharata from 
+ Sanskrit to Telugu), the court poet of 
+ Rajah RajahNarendra, (the Eastern Chalukya
+ King). The University was established to
+ fulfil the cherished dream of the people 
+ of this region, on the sacred banks of 
+ River Godavari
+
+Vision & Mission:
+This University aims to combine the pristine
+ cultural ethos and the contemporary demands
+ of educational excellence in its vision.
+ To uphold the simple but profound motto,
+ SarvatraVidyaVardhatePraja - Expansive
+ education leads to enrichment of the people,
+ Adikavi Nannaya University will nurture its
+ students as the citizens of the globe on the
+ rich fundamentals of Indian culture while 
+ respecting all its diverse ideas.
+ Combining class room and field/lab 
+ learning process, nurtured through academia
+ industry relationship, the student shall
+ embark on a journey of intellectual
+ transformation. The University is committed
+ to achieve its mission through outstanding
+ research and scholarship, education and 
+ practice by free exchange of ideas with
+ the support of its ethical, interdependent,
+ diverse community of faculty, staff,
+ students and alumni.
+</pre>
+</div>
+<div class="header2">
+<h2 style="color:#1abc9c;"><u>Payment Info</u></h2>
+<ul>
+<li>
+<h3>Google Pay</h3>
+<p>8328071230</p>
+<i class="fas fa-mobile-alt"></i>
+</li>
+ <li>
+<h3>PhonePe</h3>
+<p>8328071230</p> 
+<i class="fa fa-envelope"></i>
+                </li>
+            </ul>
+            </div>
+<body>
+	<div class="img-container">
+		<img src="QR.jpg" />
+	</div>
+<div class="header3">
+<h2 style="color:#1abc9c"><u>Bank Account Details</u></h2>
+<ul>
+<li>
+<h3>Name</h3>
+<p>NARENDRAPURAPU KARTHEEK</p>
+</li>
+<li>
+<h3>Bank Name</h3>
+<p>INDUSIND BANK</p>
+</li>
+<li>
+<h3>Account Number</h3>
+<p>INDB0001561K</p>
+</li>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<li><h3>IFSC CODE</h3>
+<p>AB1002934</p>
+</li>
+</ul>
+</div>
+<div class="form">
+<section id="contact">
+<h2 style="color:#1abc9c"><u>Contact Us</u></h2>
+<form action="submit-form.php" method="post">
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name" placeholder="Enter Your Name" required><br>
+<label for="mobile no.">Mobile No.:</label><br>
+<input type="mobile no." id="numbers" name="numbers" placeholder="Enter Your mobile number" required><br>
+<label for="email">Email Address:</label><br>
+<input type="email" id="email" name="email" placeholder="Enter Your E-mail address" required><br>
+<label for="msg or query">Message Or Query:</label><br>
+<textarea id="msg or query" name="msg or query"  rows="5" placeholder="Enter your message or query" required></textarea><br>
+<br>
+<input type="submit" value="Submit">
+			</form>
+		</section>
+</div>
+</body>
+
+</html>
